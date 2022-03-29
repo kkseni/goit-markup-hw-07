@@ -38,8 +38,10 @@
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
-.footer__map:not(:last-child) {
-  margin-bottom: 9px;
+.footer__map {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .footer__link {
   text-decoration: none;
@@ -49,8 +51,10 @@
   letter-spacing: 0.03em;
   color: var(--contacts-color);
 }
-.footer__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .footer__catalog {
   display: flex;
@@ -70,8 +74,10 @@
   width: 44px;
   height: 44px;
 }
-.footer__list:not(:last-child) {
-  margin-right: 10px;
+.footer__list {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .footer__note {
   width: 100%;
@@ -84,11 +90,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__note:hover {
-  background-color: #2196f3;
-}
-.footer__note:focus {
-  background-color: #2196f3;
+.footer__note {
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
 }
 
 .footer__icon {

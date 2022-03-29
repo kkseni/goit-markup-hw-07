@@ -14,24 +14,26 @@
   text-align: center;
   margin-bottom: 50px;
 }
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .clients__item {
   width: 170px;
   height: 92px;
 }
-.clients__link:hover {
-  border-color: #2196f3;
+.clients__link {
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
 }
-.clients__link:focus {
-  border-color: #2196f3;
-}
-.clients__link:focus svg {
-  fill: #2196f3;
-}
-.clients__link:hover svg {
-  fill: #2196f3;
+.clients__link {
+  &:hover svg,
+  &:focus svg {
+    fill: #2196f3;
+  }
 }
 .clients__link {
   width: 100%;

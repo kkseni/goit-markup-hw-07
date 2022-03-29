@@ -22,10 +22,12 @@
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.works__link:hover,
-.works__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.works__link {
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .visually-hidden {
@@ -57,8 +59,10 @@
   cursor: pointer;
   font-weight: normal;
 }
-.button__porfolio:not(:last-child) {
-  margin-right: 8px;
+.button__porfolio {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .button__link {
   border: none;
@@ -81,13 +85,11 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__link:hover {
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  box-shadow: var(--card-shadow);
-}
-.button__link:focus {
-  color: var(--primary-white-color);
-  background: var(--accent-color);
-  box-shadow: var(--card-shadow);
+.button__link {
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    box-shadow: var(--card-shadow);
+  }
 }

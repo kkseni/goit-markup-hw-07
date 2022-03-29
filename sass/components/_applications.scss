@@ -44,6 +44,8 @@
   list-style: none;
   display: flex;
 }
-.applications__item:not(:last-child) {
-  margin-right: 30px;
+.applications__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
